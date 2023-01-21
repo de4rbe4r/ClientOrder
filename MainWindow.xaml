@@ -1,0 +1,59 @@
+﻿<Window x:Class="Test_ClientOrder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test_ClientOrder"
+        mc:Ignorable="d"
+        Title="Клиент-Заказ" Height="450" Width="870" ResizeMode="NoResize"
+        Background="#FF7CDAE8" Icon="Files\client.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="1"/>
+            <ColumnDefinition Width="450"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Orientation="Vertical">
+            <Label Content="Список клиентов:" Margin="5"
+                   FontFamily="Trebuchet ms" FontWeight="Black"
+                   FontSize="18"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="btnAddClient" Margin="5,0,2,0" Width="120" Height="20" 
+                        Content="Добавить клиента" Click="AddEditClient"></Button>
+                <Button Name="btnDeleteClient" Margin="2,0,2,0" Width="120" Height="20" 
+                        Content="Удалить клиента" Click="DeleteClient"></Button>
+                <Button Name="btnEditClient" Margin="2,0,0,0" Width="140" Height="20" 
+                        Content="Редактировать клиента" Click="AddEditClient"></Button>
+            </StackPanel>
+            <ListBox Margin="5" Height="340" Name="lbClients" SelectionChanged="ChangeSelection" />
+        </StackPanel>
+
+        <Rectangle Grid.Column="1" Stroke="#FF0793A5"></Rectangle>
+        
+        <StackPanel Grid.Column="2" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Заказы клиента" Margin="5"
+                   FontFamily="Trebuchet ms" FontWeight="Black"
+                   FontSize="18"/>
+                <Label Margin="0,5,0,5"
+                   FontFamily="Trebuchet ms" FontWeight="Black" 
+                   FontSize="18">
+                    <TextBlock TextDecorations="Underline" Name="tbClient"></TextBlock>
+                </Label>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="btnAddOrder" Margin="5,0,2,0" Width="120" Height="20" 
+                        Content="Добавить заказ" Click="AddEditOrder"></Button>
+                <Button Name="btnDeleteOrder" Margin="2,0,2,0" Width="120" Height="20" 
+                        Content="Удалить заказ" Click="DeleteOrder" ></Button>
+                <Button Name="btnEditOrder" Margin="2,0,0,0" Width="140" Height="20" 
+                        Content="Редактировать заказ" Click="AddEditOrder"></Button>
+            </StackPanel>
+            <ListBox Margin="5" Height="340" Name="lbOrders" SelectionChanged="ActivateOrderButtons" >
+            </ListBox>
+        </StackPanel>
+        
+    </Grid>
+</Window>
