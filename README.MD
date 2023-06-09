@@ -7,7 +7,7 @@ A list of all customers is displayed on the left side of the application, when s
 </br>
 When you click on the "Добавить клиента" button, a new window is displayed with the input of information about the client. When a new client is added, a check is made for the existence of the client in the database.
 </br>
-<div align="center"><img src="https://github.com/de4rbe4r/ClientOrder/blob/master/Files/2.PNG" width="200"/></div>
+<div margion="5px" align="center"><img src="https://github.com/de4rbe4r/ClientOrder/blob/master/Files/2.PNG" width="200"/></div>
 </br>
 When a customer is deleted, all customer orders are deleted.
 </br>
