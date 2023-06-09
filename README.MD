@@ -9,10 +9,12 @@ When you click on the "Добавить клиента" button, a new window is 
 </br>
 <div align="center"><img src="https://github.com/de4rbe4r/ClientOrder/blob/master/Files/2.PNG" width="200"/></div>
 </br>
-When a customer is deleted, all customer orders are deleted.</br>
+When a customer is deleted, all customer orders are deleted.
+</br>
 <div align="center"><img src="https://github.com/de4rbe4r/ClientOrder/blob/master/Files/3.PNG" width="700"/></div>
 </br>
-When editing a client/order, a new window opens, into which all information about the object being edited is transmitted.</br>
+When editing a client/order, a new window opens, into which all information about the object being edited is transmitted.
+</br>
 <div align="center"><img src="https://github.com/de4rbe4r/ClientOrder/blob/master/Files/4.PNG" width="700"/></div>
 
 #### Language and tools:
